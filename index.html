@@ -10,14 +10,23 @@
   <div class="app-shell">
     <!-- TOP TELEMETRY & RESOURCE HEADER -->
     <header class="top-header">
-      <div class="brand-block">
-        <div class="brand-logo">&gt;_</div>
-        <div>
-          <div class="brand-title">
-            <span>ROOT ACCESS: THE IDLE ADMIN</span>
-            <span id="stage-badge" class="stage-badge">STAGE 01 // HOMELAB</span>
+      <div class="header-top-row">
+        <div class="header-actions">
+          <button class="btn btn-primary" onclick="window.RootApp.claimDailyCheckIn()">📅 Daily Check-in</button>
+          <button class="btn btn-cyan" onclick="window.RootApp.simulateOfflineHour()" title="Simuliert 1 Stunde Offline-Fortschritt">⏱ +1h Offline-Sim</button>
+          <button id="btn-sound-toggle" class="btn" onclick="window.RootApp.toggleSound()">🔊 SFX: AN</button>
+          <button class="btn btn-danger" onclick="window.RootApp.resetGamePrompt()" title="Spielstand zurücksetzen">↺ Reset</button>
+        </div>
+
+        <div class="brand-block">
+          <div class="brand-logo">&gt;_</div>
+          <div>
+            <div class="brand-title">
+              <span>ROOT ACCESS: THE IDLE ADMIN</span>
+              <span id="stage-badge" class="stage-badge">STAGE 01 // HOMELAB</span>
+            </div>
+            <div id="stage-name-sub" class="brand-subtitle">Standort: Kinderzimmer Homelab | DDA-Level: 1</div>
           </div>
-          <div id="stage-name-sub" class="brand-subtitle">Standort: Kinderzimmer Homelab | DDA-Level: 1</div>
         </div>
       </div>
 
@@ -51,13 +60,6 @@
             <div id="storage-bar" class="storage-progress-bar"></div>
           </div>
         </div>
-      </div>
-
-      <div class="header-actions">
-        <button class="btn btn-primary" onclick="window.RootApp.claimDailyCheckIn()">📅 Daily Check-in</button>
-        <button class="btn btn-cyan" onclick="window.RootApp.simulateOfflineHour()" title="Simuliert 1 Stunde Offline-Fortschritt">⏱ +1h Offline-Sim</button>
-        <button id="btn-sound-toggle" class="btn" onclick="window.RootApp.toggleSound()">🔊 SFX: AN</button>
-        <button class="btn btn-danger" onclick="window.RootApp.resetGamePrompt()" title="Spielstand zurücksetzen">↺ Reset</button>
       </div>
     </header>
 
